@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center"
+        android:background="@color/white">
+
+        <!-- Instagram Logo (Imagem) -->
+        <ImageView
+            android:id="@+id/instagramLogo"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/logo_insta"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Facebook Button -->
+        <Button
+            android:id="@+id/btnFacebook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Entrar com o Facebook"
+            android:backgroundTint="#1877F2"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Divider -->
+        <TextView
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="OU"
+            android:gravity="center"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Form Fields -->
+        <EditText
+            android:id="@+id/etPhoneOrEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Número do celular ou email"
+            android:layout_marginBottom="10dp" />
+
+        <EditText
+            android:id="@+id/etFullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome completo"
+            android:layout_marginBottom="10dp"
+            />
+
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome de usuário"
+            android:layout_marginBottom="10dp" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Senha"
+            android:inputType="textPassword"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Sign up Button -->
+        <Button
+            android:id="@+id/btnSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cadastre-se"
+            android:backgroundTint="#0095F6"
+            android:textColor="@android:color/white" />
+
+        <!-- Footer with Terms and Policy -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ao se cadastrar, você concorda com nossos Termos, Política de Privacidade e Política de Cookies."
+            android:gravity="center"
+            android:textSize="12sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp" />
+
+    </LinearLayout>
+</ScrollView>
